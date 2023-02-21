@@ -18,7 +18,7 @@ driver.find_element(By.ID, "password").send_keys("secret_sauce")
 driver.find_element(By.ID, "login-button").click()
 
 
-#addremove woman
+#addremove 
 
 driver.find_element(By.CSS_SELECTOR, "*[data-test=\"add-to-cart-sauce-labs-backpack\"]").click()
 
@@ -26,9 +26,7 @@ driver.find_element(By.CSS_SELECTOR, "*[data-test=\"add-to-cart-sauce-labs-bike-
 
 #remover primer item
 #driver.find_element(By.CSS_SELECTOR, "*[data-test=\"remove-sauce-labs-backpack\"]").click()
-
-
-                                       
+                                      
 time.sleep(2)
 
 driver.find_element(By.LINK_TEXT, "2").click()
