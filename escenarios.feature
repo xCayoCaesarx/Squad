@@ -3,7 +3,16 @@ Feature: login
         Given la url "https://www.saucedemo.com/"
         When username is "standard_user"
         And pass is "secret_sauce"
+        And Datos son validos
         Then logear en la pagina
+    
+
+     Scenario: No Iniciar sesion
+        Given la url "https://www.saucedemo.com/"
+        When username is "standard_user"
+        And pass is "12345678"
+        And Datos invalidos
+        Then No permite ingresar a la pagina
     
 
 Feature: Compra
